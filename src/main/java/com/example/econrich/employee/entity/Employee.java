@@ -33,7 +33,7 @@ public class Employee {
     @Column(name = "hire_date")
     private LocalDate hireDate;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "job_id")
     private Job job;
 
@@ -43,11 +43,11 @@ public class Employee {
     @Column(name = "commission_pct")
     private BigDecimal commissionPct;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "manager_id")
     private Employee manager;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "department_id")
     private Department department;
 
