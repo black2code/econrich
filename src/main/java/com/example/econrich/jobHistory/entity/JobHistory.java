@@ -17,7 +17,7 @@ import java.time.LocalDate;
 public class JobHistory implements Serializable {
 
     @Id
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "employee_id")
     private Employee employee;
 
@@ -29,11 +29,11 @@ public class JobHistory implements Serializable {
     @Column(name = "end_date")
     private LocalDate endDate;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "job_id")
     private Job job;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "department_id")
     private Department department;
 
