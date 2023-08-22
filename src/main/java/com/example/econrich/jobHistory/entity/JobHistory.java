@@ -4,13 +4,17 @@ import com.example.econrich.department.entity.Department;
 import com.example.econrich.employee.entity.Employee;
 import com.example.econrich.job.entity.Job;
 import jakarta.persistence.*;
+import lombok.Getter;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 
+@Getter
 @Entity
 @Table(name = "job_history")
-public class JobHistory {
+@IdClass(JobHistoryId.class)
+public class JobHistory implements Serializable {
 
     @Id
     @ManyToOne
@@ -33,4 +37,7 @@ public class JobHistory {
     @JoinColumn(name = "department_id")
     private Department department;
 
+    public String getDepartmentName() {
+        return department.getDepartmentName();
+    }
 }
