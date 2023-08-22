@@ -51,4 +51,8 @@ public class Employee {
     @JoinColumn(name = "department_id")
     private Department department;
 
+    public String getJobTitle() {
+        return job.getJobTitle();
+    }
+
 }
