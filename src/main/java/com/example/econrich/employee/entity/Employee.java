@@ -55,4 +55,8 @@ public class Employee {
         return job.getJobTitle();
     }
 
+    public void setSalary(BigDecimal increasedSalary) {
+        this.salary = increasedSalary;
+    }
+
 }

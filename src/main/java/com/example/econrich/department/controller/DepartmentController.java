@@ -1,15 +1,14 @@
 package com.example.econrich.department.controller;
 
 import com.example.econrich.department.dto.DepartmentResponse;
-import com.example.econrich.department.entity.Department;
 import com.example.econrich.department.service.DepartmentService;
 import com.example.econrich.global.dto.GlobalResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 
@@ -26,6 +25,17 @@ public class DepartmentController {
 
         List<DepartmentResponse> response = departmentService.getAllDepartmentsWithLocations();
         return GlobalResponse.success(response);
+
+    }
+
+    @Transactional
+    @PostMapping("/increase-salary")
+    @Operation(summary = "특정 부서의 급여를 특정 비율로 인상 및 사원 정보 업데이트 API")
+    public GlobalResponse increaseSalaryByDepartment(@RequestParam("departmentId") Long departmentId,
+                                                     @RequestParam("increaseRate") BigDecimal increaseRate) {
+
+        departmentService.increaseSalaryByDepartment(departmentId, increaseRate);
+        return GlobalResponse.success("Salary increased successfully");
 
     }
 

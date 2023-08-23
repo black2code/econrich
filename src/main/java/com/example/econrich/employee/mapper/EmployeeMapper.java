@@ -14,5 +14,6 @@ import org.mapstruct.ReportingPolicy;
 public interface EmployeeMapper {
 
     @Mapping(source = "job.jobTitle", target = "jobTitle")
+    @Mapping(source = "salary", target = "salary")
     EmployeeResponse employeeToEmployeeResponse(Employee employee);
 }
