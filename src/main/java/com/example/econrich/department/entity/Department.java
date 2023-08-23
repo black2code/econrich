@@ -5,6 +5,8 @@ import com.example.econrich.location.entity.Location;
 import jakarta.persistence.*;
 import lombok.Getter;
 
+import java.util.List;
+
 
 @Getter
 @Entity
@@ -25,5 +27,8 @@ public class Department {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "location_id")
     private Location location;
+
+    @OneToMany(mappedBy = "department")
+    private List<Employee> employees;
 
 }
