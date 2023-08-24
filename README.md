@@ -1,5 +1,7 @@
 # econrich
 
+- Oracle의 HR 스키마의 데이터 사용
+- https://github.com/nomemory/hr-schema-mysql/blob/master/hr-schema-mysql.sql
 
 <br>
 
