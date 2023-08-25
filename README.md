@@ -33,7 +33,7 @@
 <br>
 
 ## 배포 주소
-- 개발 서버 : http://econrich-dev-env-1.eba-b3uqwwmp.ap-northeast-2.elasticbeanstalk.com:5000
+- 개발 서버 : http://awskk-env.eba-emhazdpw.ap-northeast-2.elasticbeanstalk.com:5000
 - Swagger : http://awskk-env.eba-emhazdpw.ap-northeast-2.elasticbeanstalk.com:5000/swagger-ui/index.html
 
 
