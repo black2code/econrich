@@ -43,25 +43,33 @@
 
 ![image](https://github.com/black2code/econrich/assets/93053451/6c3d88d5-60b2-4d39-a581-0a0bb89054cc)
 
+
 <br>
+
 
 - 특정 사원 현재 정보 조회
   
 <img width="642" alt="image" src="https://github.com/black2code/econrich/assets/93053451/4907150b-fc58-47bb-9e6c-d41e9062a3a6">
 
+
 <br>
+
 
 - 특정 사원 이력 정보 조회
 
 <img width="696" alt="image" src="https://github.com/black2code/econrich/assets/93053451/f2d7d181-c355-491f-8ff7-f449ac79a454">
 
+
 <br>
+
 
 - 모든 부서 정보 조회
 
 ![image](https://github.com/black2code/econrich/assets/93053451/45e5361e-439d-4cb0-80bb-df374cf50355)
 
+
 <br>
+
 
 - 특정 부서의 급여를 특정 비율로 인상 및 사원 정보 업데이트
 - 90번부서에 소속된 사원번호 100번 Steven의 급여가 증가된 내역 확인할 수 있다.
