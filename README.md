@@ -45,6 +45,7 @@
 
 
 <br>
+<br>
 
 
 - 특정 사원 현재 정보 조회
@@ -52,6 +53,7 @@
 <img width="642" alt="image" src="https://github.com/black2code/econrich/assets/93053451/4907150b-fc58-47bb-9e6c-d41e9062a3a6">
 
 
+<br>
 <br>
 
 
@@ -61,6 +63,7 @@
 
 
 <br>
+<br>
 
 
 - 모든 부서 정보 조회
@@ -68,6 +71,7 @@
 ![image](https://github.com/black2code/econrich/assets/93053451/45e5361e-439d-4cb0-80bb-df374cf50355)
 
 
+<br>
 <br>
 
 
@@ -78,7 +82,10 @@
 
 ![image](https://github.com/black2code/econrich/assets/93053451/edff2fb5-2312-4e78-8fb1-e667fbdb9a3d)
 
+
 <br>
+<br>
+
 
 - 공공데이터 활용 API (해당 날짜의 박스 오피스 조회)
 
