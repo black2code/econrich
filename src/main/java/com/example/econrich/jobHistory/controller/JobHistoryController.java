@@ -22,7 +22,7 @@ public class JobHistoryController {
 
     @GetMapping("/{employeeId}/history")
     @Operation(summary = "특정 사원 이력 정보 조회 API")
-    @Parameter(name = "employeeId", description = "사원 번호 ex.100")
+    @Parameter(name = "employeeId", description = "사원 번호 ex.101")
     public GlobalResponse getJobHistoryByEmployeeId(@PathVariable("employeeId") Long employeeId) {
 
         List<JobHistoryResponse> jobHistoryResponseList =
