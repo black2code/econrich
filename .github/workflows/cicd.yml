@@ -44,5 +44,5 @@ jobs:
           application_name: econrich
           environment_name: econrich-env
           version_label: github-action-${{steps.current-time.outputs.formattedTime}}
-          region: ap-northeast-2
+          aws_region: ap-northeast-2
           deployment_package: ./build/libs/${{env.artifact}}
