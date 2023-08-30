@@ -28,7 +28,7 @@ jobs:
         uses: josStorer/get-current-time@v2.0.2
         id: current-time
         with:
-          format: 'YYYY-MM-DD HH:mm:ss'
+          format: YYYY-MM-DD HH:mm:ss
           utcOffset: '+09:00'
 
       #6 배포용 패키지 경로 저장
